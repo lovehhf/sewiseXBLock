@@ -1,0 +1,33 @@
+<div class="sewise_block">
+    <h2>{{ display_name }}</h2>
+    <hr>
+    <div id="sewise" style="">
+    </div>
+    <script type="text/javascript" src="http://7sby7q.com1.z0.glb.clouddn.com/sewise.player.min.js"></script>
+    <div id="player" style="width: 600px;height: 400px;">
+    <script type="text/javascript">
+        /*
+        function move_player(){
+        $("#sewise_player").appendTo("#sewise");
+        var url = "http://7xlln5.media1.z0.glb.clouddn.com/ILapgFDvTGYh5QONszIBk3xJNZE=/luuSV41WngqBlxbu25YLNQ15cBJf?pm3u8/0/expires/1800&e=1444010580&token=HfF_PSaWTTwFRcBQp76ybZiP3crxLaKL77oO2Wde:7LHbTkUFmSrp9WB8aUGxwYrDuLI=";
+        $("#sewise_player").attr("data",url);
+        }
+        $(function () {
+        setTimeout("move_player()",3000);
+        });*/
+        function play_video(){
+        SewisePlayer.setup({
+                server: "vod",
+                type: "m3u8",
+                autostart: "true",
+                poster: "http://jackzhang1204.github.io/materials/poster.png",
+                videourl: video_id, 
+                skin: "vodWhite",
+                title: "M3U8 AES 128",
+                lang: "zh_CN",
+                claritybutton: 'disable'
+                }, "player");}
+        setTimeout("play_video()",3000);
+    </script>
+    </div>
+</div>

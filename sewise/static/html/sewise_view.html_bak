@@ -1,0 +1,17 @@
+<div class="sewise_block">
+    <h2>{{ display_name }}</h2>
+    <hr>
+    <div id="sewise" style="width: 640px; height: 360px; ">
+    <script type="text/javascript" src="http://jackzhang1204.github.io/sewise/sewise_player/player/sewise.player.min.js?server=vod&type=m3u8&videourl=http://116.77.32.202:5080/data/userdata/vod/resource/201408/21141727.flv.m3u8&autostart=true&starttime=0&lang=zh_CN&logo=http://onvod.sewise.com/libs/swfplayer/skin/images/logo.png&title=M3U8%20Cross%20Platform&buffer=5&claritybutton=disable&skin=vodFlowPlayer"></script>
+    <script type="text/javascript">
+        function move_player(){
+        $("#sewise_player").appendTo("#sewise");
+        var url = "http://7xlln5.media1.z0.glb.clouddn.com/ILapgFDvTGYh5QONszIBk3xJNZE=/luuSV41WngqBlxbu25YLNQ15cBJf?pm3u8/0/expires/1800&e=1444010580&token=HfF_PSaWTTwFRcBQp76ybZiP3crxLaKL77oO2Wde:7LHbTkUFmSrp9WB8aUGxwYrDuLI=";
+        $("#sewise_player").attr("data",url);
+        }
+        $(function () {
+        setTimeout("move_player()",3000);
+        });
+    </script>
+    </div>
+</div>
