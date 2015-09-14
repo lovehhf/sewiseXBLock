@@ -133,12 +133,12 @@ class sewiseXBlock(XBlock):
     @XBlock.json_handler
     def get_params(self, data, suffix=''):
         '''called when sewise init'''
-        sessionid = "7f299b0c2d89269f20c9eca2c2b637b6"
+        #sessionid = "7f299b0c2d89269f20c9eca2c2b637b6"
+        sessionid = data["sessionid"]
         base_url = "http://videoapi.unihse.com:8888/video/player/"
         url = base_url+self.video_id+"/"+sessionid
         response = requests.get(url)
         response_json = response.json()
-        #sessionid = data["sessionid"]
         return {
                 "data":response_json,
                 "sessionid":data,
