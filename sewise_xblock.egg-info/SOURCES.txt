@@ -1,0 +1,14 @@
+sewise/__init__.py
+sewise/sewise.py
+sewise/static/html/sewise_edit.html
+sewise/static/html/sewise_view.html
+sewise/static/html/sewise_view.html_bak
+sewise/static/js/sewise.player.min.js
+sewise/static/js/sewise_edit.js
+sewise/static/js/sewise_view.js
+sewise_xblock.egg-info/PKG-INFO
+sewise_xblock.egg-info/SOURCES.txt
+sewise_xblock.egg-info/dependency_links.txt
+sewise_xblock.egg-info/entry_points.txt
+sewise_xblock.egg-info/requires.txt
+sewise_xblock.egg-info/top_level.txt
